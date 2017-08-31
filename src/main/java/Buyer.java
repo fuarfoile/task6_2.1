@@ -23,6 +23,14 @@ public class Buyer implements Serializable, Cloneable {
         creditCardNumber = (long) (Math.random() * 9999_9999_9999_9999L); //1000
         bankAccountNumber = (long) (Math.random() * 999_999_999_999_999_999L);
     }
+    public Buyer(String firstName, String secondName, String thirdName, String address, long creditCardNumber, long bankAccountNumber) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.thirdName = thirdName;
+        this.address = address;
+        this.creditCardNumber = creditCardNumber;
+        this.bankAccountNumber = bankAccountNumber;
+    }
 
     @Override
     public Buyer clone(){
